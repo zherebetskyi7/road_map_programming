@@ -60,7 +60,7 @@ public class DownloadPicturesClass
         BufferedImage image = null;
         try
         {
-            if (!(imgSrc.startsWith("http")))
+            if (!((imgSrc.startsWith("https"))||(imgSrc.startsWith("http"))))
             {
                 url = url + imgSrc;
             } else {

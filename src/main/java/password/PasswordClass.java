@@ -14,20 +14,28 @@ public class PasswordClass
 
         System.out.println("Please enter your password:");
         String password = scan.nextLine();
-        if (checkWithRegExp(password) == true)
+        try
         {
-            System.out.println("Good password");
+            if (checkWithRegExp(password))
+            {
+                System.out.println("Good password");
+            }
+            else
+            {
+                System.out.println("Your password should contain one upper, one small and one digit symbol, " +
+                        "also sum of characters should be 8 or more");
+            }
+            System.out.println(checkWithRegExp(password));
         }
-        else
+        catch (InputMismatchException e)
         {
-            System.out.println("Your password should contain one upper, one small and one digit symbol, " +
-                    "also sum of characters should be 8 or more");
+            System.out.println("Wrong symbols, you can input only upper/lower case, numbers and '_'");
         }
-        System.out.println(checkWithRegExp(password));
+
     }
 
     public static boolean checkWithRegExp(String userNameString){
-        Pattern p = Pattern.compile("^[a-zA-Z0-9_]((?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,})$");
+        Pattern p = Pattern.compile("^(?=.*[a-z0-9_])(?=.*[A-Z])[A-z0-9_]{8,}$");//("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9_]).{8,}$");
         Matcher m = p.matcher(userNameString);
         return m.matches();
     }
