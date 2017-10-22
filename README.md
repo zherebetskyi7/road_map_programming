@@ -1,5 +1,5 @@
 <b>Download and Install JAVA 1.8.*</b>
-<strong>https://java.com/en/download/help/download_options.xml</strong>
+<p><strong>https://java.com/en/download/help/download_options.xml</strong></p>
 
 <i>check java version in console:</i>  <b>"java -version"</b>
 <p><i>check javac version in console:</i> <b>"javac -version"</b></p>
@@ -8,7 +8,7 @@
 <p><i>https://maven.apache.org/download.cgi</i></p>
 <p><i>https://maven.apache.org/install.html</i></p>
 
-<i>check mvn version in console:<i>   <b>"mvn -version"</b>
+<i>check mvn version in console:</i>   <b>"mvn -version"</b>
 
 <b><i>Clone this project, enter to this project from console and run from console:</i></b>
 
