@@ -10,12 +10,15 @@
 
 <i>check mvn version in console:<i>   <b>"mvn -version"</b>
 
-<b>Clone this project, enter to this project from console and run from console:<b>
+<b><i>Clone this project, enter to this project from console and run from console:</i></b>
 
 <b>mvn clean install</b>
 
 <b>mvn exec:java -Dexec.mainClass="runProgramFromJson.JsonMain"</b>             <i>if you want run tasks from json</i>
 <p><b>mvn exec:java -Dexec.mainClass="enterDataFromConsole.mainPackage.Main"</b> <i>if you want type data to console</i></p>
+
+
+
 
 <strong>All Json files with input data are in src/main/java/runProgramFromJson folder</strong>
 
