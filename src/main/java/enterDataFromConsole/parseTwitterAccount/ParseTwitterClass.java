@@ -54,10 +54,10 @@ public class ParseTwitterClass
         ConfigurationBuilder cb = new ConfigurationBuilder();
 
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("AQ05bwI9GNuWsnW9ZUjKluQX6")
-                .setOAuthConsumerSecret("CCRMICVD9CwBfG4EyXC9J0Mr4xypLyOGeozwpu0vKAvuIKHJDE")
-                .setOAuthAccessToken("909131287239249920-rLUDP7wHBLctjD98kM3A0B8PWt1A1Wm")
-                .setOAuthAccessTokenSecret("GvbwwjQKlrmS0Q5iq9gjZnT63711Hij1UXRq1AjXPYJoD");
+                .setOAuthConsumerKey("")
+                .setOAuthConsumerSecret("")
+                .setOAuthAccessToken("")
+                .setOAuthAccessTokenSecret("");
 
         Twitter tf = new TwitterFactory(cb.build()).getInstance();
         //First param of Paging() is the page number, second is the number per page (this is capped around 200 I think.
